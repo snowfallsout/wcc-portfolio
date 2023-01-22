@@ -2,7 +2,8 @@
 /*This is a comment in CSS*/
 
 body{
-    font-family: Georgia, serif;
+    /* font-family: Georgia, serif; */
+    font-family: Courier New, monospace;
 }
 
 h1{
@@ -38,7 +39,7 @@ p{
     rotate: 0deg;
 }
 .title a.paths{
-    left: 78%;
+    left: 66%;
     top: 30px;
     rotate: 0deg;
 }
