@@ -58,7 +58,7 @@ footer{
     display: flex;
     width: 100%;
     height: 0;
-    padding: 30% 0;
+    padding: 40% 0;
     background-image: url(../assets/images/lightgrey-line.jpeg); 
     
     /*change the image to one of you choice */
@@ -69,7 +69,7 @@ footer{
     text-align: center;
     text-decoration: none;
     color:#4f4f4f;
-    transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+    transition: all 0.25s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
 }
 
 /* want a different background image for each project? */
@@ -98,15 +98,19 @@ footer{
 
 
 .flex-item a:hover{
-    color:#bbbbbb;
-    background-size: 120%;
+    /* color:#bbbbbb; */
+    color:#00000076;
+    background-size: 130%;
 }
 
 .flex-item h4{
    margin:10px;
-   background-color: white;
+   background-color: rgba(255, 255, 255, 0.93);
    padding:5px 10px;
 }
+.flex-item h4:hover{
+
+ }
 
 
 /* Media Queries for responsive design */
