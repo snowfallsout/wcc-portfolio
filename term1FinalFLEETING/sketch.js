@@ -29,13 +29,13 @@ const palette = ["#0000007F","#000000A8","#000000BF","#FFFFFF89","#FFFFFF3D","#D
 ];
 //*movers FOR NOSE*
 let movers = [];
-let numMovers = 0;
+let numMovers = 15;
 //*moversB FOR LEFTHAND*
 let moversB = [];
-let numMoversB = 12;
+let numMoversB = 0;
 //*moversB FOR RIGHTHAND*
 let moversC = [];
-let numMoversC = 12;
+let numMoversC = 0;
 
 function setup() {
   createCanvas(640, 480);

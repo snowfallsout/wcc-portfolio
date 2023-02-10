@@ -14,7 +14,7 @@ let bubble3;
 let b=0;
 
 function setup() {
-  createCanvas(700, 700);
+  createCanvas(620, 620);
   //*BACKGROUND COLOR*
   background(95,88,75);
   for(let i=0;i<num;i++){
@@ -56,8 +56,8 @@ function draw() {
     let a=0;
     let j=noise(xoff,i)*height;
     let r=noise(i,j)*70;
-    stroke(245,230,200,10);
-    fill(245,230,200,10);
+    stroke(245,240,200,10);
+    fill(245,240,200,10);
     ellipse(j,i,r*sin(b));
     noFill();
     stroke(245,230,200,255);
@@ -75,6 +75,12 @@ function draw() {
    bubble3.move();
    bubble3.show();
   
+   fill(245,240,220);
+   rect(0, 0, width, 15);
+   rect(0, height-10, width, 15);
+   rect(0, 0, 10, height);
+   rect(width-10, 0, 10, height);
+   
 }
 //*CIRCLE BRUSH*
 class Bubble {
