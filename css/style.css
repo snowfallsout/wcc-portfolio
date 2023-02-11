@@ -95,7 +95,9 @@ footer{
 .flex-item a#Term02-2 {
     background-image: url(../assets/images/3body.jpg);
 }
-
+.flex-item a#Term02-3 {
+    background-image: url(../assets/images/Mirage.jpg);
+}
 
 .flex-item a:hover{
     /* color:#bbbbbb; */
