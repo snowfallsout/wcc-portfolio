@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- meta viewport tag needed to make site responsive on mobile devices https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>玉盘珍馐Delicacies Sharing</title>
+
+        <!-- including for some global styling -->
+        <link rel="stylesheet" href="../css/style.css">
+
+    </head>
+    <body>
+        <!-- if you have sub-pages think about adding a simple back button -->
+        <nav>
+            <a href="../">HOME</a>
+        </nav>
+        <header class="documentation-header">
+            <section class="center-text">
+                <h1>玉盘珍馐Delicacies Sharing</h1>
+                <h2>by Xueyi Huang</h6>
+                <p>This is a WebXR/AR project in which the artist eases people's anxiety 
+                    through a gorgeous 'oriental table'.</p> 
+            </section>
+        </header>
+
+        <main class="documentation-page">
+            <section>
+                <div class="responsive-video centered-content">
+                    <iframe title="vimeo-player" src="https://vimeo.com/822500138?share=copy" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section>
+                <h3>Introduction</h3>
+                <p>Delicacies Sharing is an art website where different users can have different experiences within the site. 
+                    The food on the table is reproducible and movable, and the user can arrange it in the shape of his or her choice.
+                     Users can turn on the camera and relax while eating on the web. Mobile users can activate the AR function to place a virtual table in real space, decorated by themselves. 
+                     The main element of the website is a gorgeous "oriental table", a project that I hope will ease people's anxiety and reduce body managers' fear of food.</p>
+            </section>
+            <section>
+                <h3>Concept and Background Research</h3>
+                
+                <p>Delicacies Sharing is an art website that aims to promote food sharing and reduce anxiety around eating. 
+                    The concept is rooted in the idea that food is not just fuel for the body, but also a source of pleasure, connection, and creativity. 
+                    The website allows users to create their own virtual table and arrange food in a way that reflects their mood, taste, and culture. 
+                    By sharing their virtual table with others, users can experience a sense of community and explore different culinary traditions. 
+                    The website also incorporates the use of augmented reality to create a more immersive and interactive experience for mobile users.</p>
+
+                <p>Food has great cultural significance to society. 
+                    Many contemporary artists have explored the intersection of food and art, creating works in the form of installations, performances, etc. 
+                    Rirkrit Tiravanija is a Thai artist known for his participatory installations that involve cooking and sharing food with visitors. 
+                    Jennifer Rubell is an American artist who creates participatory art on a surprisingly large and engaging scale and uses food and drinks as a medium. 
+                    The artist's actions give a different meaning to food. </p>
+
+                <p>In the last semester of my course, I was exposed to information about 3d and WebXR. 
+                    I think of website art as niche, but it has very widespread. 
+                    Visually I refer to the 1984 publication The Romance of Food featuring over 170 pages of quirky technicolour. 
+                    Food takes on a stunning storytelling quality under Cartland's camera. So I designed an oriental revolving round table with some exquisite Chinese delicacies on it. 
+                    The Chinese word for 'reunion' is 'tuan yuan', and the idea of a family eating together around a round table is to show the unity and harmony of the family and to seek a rounded atmosphere. 
+                    This is in line with our cultural emphasis on "collectivism". </p>
+                
+
+                <!-- if you have a full width image try make it not too tall -->
+                <img src="../assets/images/repeating-diagonal-lines-strip.jpeg"/>
+                
+            </section>
+            <section>
+                <h3>Technical Implementation</h3>
+
+                <!-- example of styling for three images, you can write your own styling -->
+                <div class="flex-container flex-basis-third">
+                    <div class="flex-item">
+                        <img src="../assets/images/unity.png" style="
+                        width: 536px;
+                        height: 397px;
+                       ">
+                    </div>
+                    <!-- <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-square.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-square.jpeg"/>
+                    </div>
+                </div> -->
+                
+                <p>The whole project was mainly created using Unity, accompanied by Needle Engine for web building. 
+                    It can automatically compile Three. during scene creation and deploy the local server to automatically open the test web pages. 
+                    Needle will automatically convert ts scripts to C# and put them into Unity. 
+                    I wanted to simulate the carousel effect of a round table so that 3d dishes could rotate on it, 
+                    so I wrote a script about object rotation. </p>
+            
+                <!-- example of styling for three images, you can write your own styling -->
+                <div class="flex-container flex-basis-half">
+                    <div class="flex-item">
+                        <img src="../assets/images/ts.png" style="
+                        width: 510px;
+                        height: 390px;
+                        ">
+                    </div>
+                    <!-- <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div> -->
+                </div>
+
+                <p>I then added a Drag Control script to the 3d dishes, 
+                    which allows the user to drag and drop more models onto the screen. 
+                    This interaction means "more dishes, more luck". </p>
+
+                <p>On the clouds in the mountains, I added the Screen Capture script and the Video Play Data script. 
+                    When the user clicks on it on the web site they can share the open windows on their own computer. 
+                    I want users to be able to use this feature to share photos of themselves while eating. </p>
+
+                    <p>I then added a Drag Control script to the 3d dishes, 
+                        which allows the user to drag and drop more models onto the screen. 
+                        This interaction means "more dishes, more luck". </p>
+
+                <!-- default flex item is for 4 & follows media query styling for home page -->
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <img src="../assets/images/jiaxin.png"
+                        style="
+                        width: 510px;
+                        height: 340px;
+                        ">
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/dsWeb.png"
+                        style="
+                        width: 510px;
+                        height: 340px;
+                        ">
+                    </div>
+                    <!-- <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../assets/images/repeating-diagonal-lines-rect.jpeg"/>
+                    </div> -->
+                </div>
+         
+            </section>
+            <section>
+                <h3>Reflection and Future Development</h3>
+                <p>The Needle Engine is a web engine for 3D applications.
+                    It runs on your machine for development and can be deployed anywhere. 
+                    But I'm having a lot of trouble making it, so I'll be talking to the techies on Discord.</p>
+                    <p>Unity itself is a very powerful engine, but I have not had much luck writing ts scripts, 
+                        and many of the additional ones I have tried to implement have failed. 
+                        I tried using Typescript in unity like buttons to toggle skyboxes, volume to affect object size, etc. 
+                        but it all came up with an error. So I still need to do more research on this.</p>
+                        <p>At first, I was hoping to incorporate a somatic game model that was communicating via UDP to transfer body data acquired by OpenCV to Unity, 
+                            but no solution has been sought that would allow the Needle Engine to transfer OpenCV data since. 
+                            Perhaps writing Javascript and then figuring out how to transfer it to the Three.js scene would be a solution.</p>
+                            <p>Overall it's a handy tool to create web pages and can steadily piggyback complex 3d scenes on web pages. 
+                                However, its functionality is not perfect and it requires a basic knowledge of Unity operations. 
+                                During AR interaction, the shader sometimes reports errors when the user drags and drops objects via the touch screen/mouse, 
+                                resulting in some strange tearing and deformation of the model. 
+                                I also need to look into GLSL and GLM-related knowledge in the future.</p>
+            </section>
+            <section>
+                <h3>References</h3>
+                <ul>
+                    <li>1.Needle Engine Documentation. (n.d.). Needle Engine. https://engine.needle.tools/docs/</li>
+                    <li>2.Needle Engine Samples. (n.d.). https://engine.needle.tools/samples/
+                        I mainly refer to the Samples Sandbox and Screensharing.</li>
+                    <li>3.(N.d.). TypeScript. https://www.typescriptlang.org/</li>
+            
+                    <li>[1]Keller, J. (n.d.). FROM STUDIO TO DINING TABLE: RIRKRIT TIRAVANIJA. Schirn. https://www.schirn.de/en/magazine/whats_cooking/vom_atelier_an_den_esstisch_rirkrit_tiravanija/</li>
+                    <li>[2]Stokes, R. (n.d.). Rirkrit Tiravanija: Cooking Up an Art Experience. INSIDE/OUT. https://www.moma.org/explore/inside_out/2012/02/03/rirkrit-tiravanija-cooking-up-an-art-experience/</li>
+                    <li>[3]Rubell, J. (n.d.). Jennifer Rubell. https://www.jenniferrubell.com/</li>
+              
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <!-- normally information like contact details etc  -->
+            <!-- read more about semantic HTML https://www.w3schools.com/html/html5_semantic_elements.asp -->
+            
+         </footer>
+    </body>
+</html>
